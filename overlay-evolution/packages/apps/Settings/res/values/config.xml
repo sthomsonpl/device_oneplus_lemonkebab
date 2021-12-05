@@ -30,7 +30,8 @@
        
        <bool name="config_show_max_refresh_rate_switch">true</bool>
        
-          
+         <!-- TouchGestures -->
+    <bool name="config_hasLineageTouchGestures">true</bool>
 
 
 </resources>
