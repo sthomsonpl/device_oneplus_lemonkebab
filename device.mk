@@ -286,6 +286,7 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.performance_level.rc \
     ueventd.qcom.rc \
     vendor.oem_ftm.rc \
     vendor.oem_ftm_svc_disable.rc \
