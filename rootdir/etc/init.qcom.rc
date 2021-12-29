@@ -79,6 +79,8 @@ on init
     write /sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate 1
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
+    
+       setprop vendor.boot.project_name ${ro.boot.project_name}
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
@@ -994,6 +996,8 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
 
+
+    
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
     override
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0

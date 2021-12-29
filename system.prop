@@ -6,6 +6,14 @@ audio.offload.min.duration.secs=30
 persist.vendor.audio.hac.enable=false
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
+
+# Codec2 for audio and OMX for Video
+debug.stagefright.ccodec=1
+
+# OnePlus
+ro.vendor.product.manufacturer.db=OP_PHONE
+ro.vendor.product.device.db=OP_DEVICE
+
 # Blur on app-launch
 ro.launcher.blur.appLaunch=0
 

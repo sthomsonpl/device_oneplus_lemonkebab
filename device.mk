@@ -30,6 +30,9 @@ $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 # Camera
 PRODUCT_PACKAGES += SnapdragonCamera2
 
+# Inherit packages from vendor/oneplus/addons/camera
+$(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
+
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
@@ -248,13 +251,14 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    Snap \
+     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.displayservice@1.0.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    ftm_power_config.sh \
+    init.oneplus.camera.rc \
+	ftm_power_config.sh \
     init.class_main.sh \
     init.crda.sh \
     init.cust.rc \
@@ -402,7 +406,10 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhwbinder.vendor
+     libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+	libhwbinder.vendor
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
