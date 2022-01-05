@@ -33,7 +33,7 @@ import com.android.internal.os.DeviceKeyHandler;
 
 import vendor.oneplus.hardware.camera.V1_0.IOnePlusCameraProvider;
 
-public  class KeyHandler implements DeviceKeyHandler {
+public abstract class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final boolean DEBUG = false;
 
