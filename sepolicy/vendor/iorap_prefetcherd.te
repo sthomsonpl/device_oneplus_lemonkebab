@@ -1,1 +1,1 @@
-allow iorap_prefetcherd evolution_data_file:file { read open }; 
+allow iorap_prefetcherd aosp_data_file:file { read open }; 

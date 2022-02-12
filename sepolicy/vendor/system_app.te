@@ -8,7 +8,7 @@ allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
 binder_call(system_server, hal_cameraHIDL_default)
 
 allow system_server app_zygote:process { getattr getpgid };
-allow system_server evolution_data_file:file r_file_perms;
+allow system_server aosp_data_file:file r_file_perms;
 typeattribute system_app hal_cameraHIDL_client;
 allow system_app oem_service:service_manager find;
 binder_call(system_app, hal_cameraHIDL_default)

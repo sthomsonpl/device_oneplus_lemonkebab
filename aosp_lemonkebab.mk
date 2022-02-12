@@ -21,16 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonkebab device
 $(call inherit-product, device/oneplus/lemonkebab/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Aosp stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
+
+ARCANA_DEVICE := Oneplus-8T/9R
+ARCANA_MAINTAINER := Sthomson
+WITH_GAPPS := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-EVO_MAINTAINER:= sthomson
+
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_lemonkebab
+PRODUCT_NAME := aosp_lemonkebab
 PRODUCT_DEVICE := lemonkebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
