@@ -31,6 +31,8 @@ WITH_GAPPS := true
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#UDFPS Animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 
 # Device identifier. This must come after all inclusions.
