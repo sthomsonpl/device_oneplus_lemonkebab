@@ -100,5 +100,5 @@
     <integer name="config_defaultRefreshRate">120</integer>
 
        <!-- Whether to force enable multi resolution configuration for camera -->
-    <bool name="config_forceMultiResolution">true/bool>
+    <bool name="config_forceMultiResolution">true</bool>
 </resources>
