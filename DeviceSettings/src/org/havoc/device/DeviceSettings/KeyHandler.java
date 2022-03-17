@@ -33,7 +33,7 @@ import com.android.internal.os.DeviceKeyHandler;
 
 import vendor.oneplus.hardware.camera.V1_0.IOnePlusCameraProvider;
 
-public abstract class KeyHandler implements DeviceKeyHandler {
+public class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final boolean DEBUG = false;
 
@@ -99,9 +99,9 @@ public abstract class KeyHandler implements DeviceKeyHandler {
         return false;
     }
 
-    public boolean handleKeyEvent(KeyEvent event) {
+    public KeyEvent handleKeyEvent(KeyEvent event) {
         if (event.getAction() != KeyEvent.ACTION_DOWN) {
-            return true;
+            return event;
         }
 
         int scanCode = event.getScanCode();
@@ -124,10 +124,10 @@ public abstract class KeyHandler implements DeviceKeyHandler {
                 VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             default:
-                return true;
+                return event;
         }
 
-        return true;
+        return null;
     }
 
     private void doHapticFeedback(VibrationEffect effect) {
