@@ -72,11 +72,6 @@
     <string name="pocket_gesture_title">口袋</string>
     <string name="pocket_gesture_summary">从口袋中移出时显示通知</string>
 
-    <!-- Log Tile -->
-    <string name="quick_settings_log_tile_label">抓取log</string>
-    <string name="quick_settings_log_tile_dialog_title">选项</string>
-    <string name="cannot_get_su">操作失败，未能获取root权限！</string>
-
     <!-- FPS Info -->
     <string name="fps_title">FPS 帧率显示</string>
     <string name="fps_info_title">FPS 叠加层</string>
@@ -96,11 +91,6 @@
     <string name="fps_info_position_bottom_center">底部居中</string>
     <string name="fps_info_position_bottom_right">底部居右</string>
     <string name="fps_info_text_size_title">文本大小</string>
-
-    <!-- Touchscreen gestures -->
-    <string name="screen_gestures_panel_title">手势</string>
-    <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
-    <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>
 
     <!-- Network -->
     <string name="network_title">网络</string>
