@@ -14,3 +14,5 @@ allow system_server vendor_proc_shs:dir { search };
 allow system_server vendor_sysfs_battery_supply:file { getattr open read };
 
 allow system_server app_zygote:process getpgid;
+
+allow system_server system_file:file ioctl;
