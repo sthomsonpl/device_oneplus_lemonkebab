@@ -21,20 +21,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonkebab device
 $(call inherit-product, device/oneplus/lemonkebab/device.mk)
 
-# Inherit some common Nameless AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CHERISH stuff.
+$(call inherit-product, vendor/cherish/config/common.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official
-CUSTOM_BUILD_TYPE := Official
+
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_lemonkebab
+PRODUCT_NAME := cherish_lemonkebab
 PRODUCT_DEVICE := lemonkebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2101
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=sthomsonpl
+
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
