@@ -71,9 +71,11 @@ vendor/lib/rfsa/adsp/libvdsuperphoto_skel.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so|f8549f8c783e61e97be9a97bcb8bf80d5989d0dd
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|643f80c571c2cda57acfc52f2bdd5472bcb4a58a
 
+
 # ANT+ (vendor) - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
 vendor/lib/hw/com.dsi.ant@1.0-impl.so|dcaa73589c751c11d4cf7e1115be2935af37f20e
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|5925901f12b42f5f3be164ce437f4b27d7c16181
+
 
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
@@ -91,6 +93,7 @@ vendor/lib/libadsprpc.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
+
 
 # Audio firmware - from OnePlus9Oxygen_22.I.13_OTA_0130_all_2111112106_b924739
 vendor/firmware/tfa98xx.cnt|5578bfb86a4123af049c2885af7b30d3fd0a53e4
@@ -138,6 +141,61 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|09cff8a0ae043d7988d832b805
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|b5c4b9d6910c36d014021fa1104aaad917d2fe29
 
 # Bluetooth (aptX) - from crosshatch - SP1A.210812.016.A2
+
+# Authsecret
+vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
+vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc
+
+# Audio libraries - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+vendor/lib/soundfx/libasphere.so|b2daeb875914a33575c7d7a67429f25d09d35489
+vendor/lib/soundfx/libqcbassboost.so|00c29b4e50e67c5de4ad22e0284c500080b4c116
+vendor/lib/soundfx/libqcreverb.so|e90d723c6599b68d69109650e017d85f1ea9a582
+vendor/lib/soundfx/libqcvirt.so|942ce731900b949a262f00a0702af899c3ecc82b
+vendor/lib/soundfx/libshoebox.so|214d5fefd21c617bdfa05255fe667127b4242556
+vendor/lib/libacdb-fts.so|eef23fae81789a1fc0a93166e3ad227707a37349
+vendor/lib/libacdbloader.so|70c12d3a4e0f06b77c4e93bb94977e5396bfb6a6
+vendor/lib/libacdbrtac.so|497cb27b250f618aae3eb7a0e000e343ba6b1b26
+vendor/lib/libadiertac.so|12e4898f0b38b4604debeafc3f00bd3921f4c2f8
+vendor/lib/libadm.so|1954acdfa454e83054bb7d7656b8f276287f8a22
+vendor/lib/libaudcal.so|162fabfdfcdfc5647201574505a6eda6534e8874
+vendor/lib/libqtigef.so|3bae81a37cd0f344f41c2d542c348c6329b846fc
+
+# Audio firmware
+vendor/firmware/tfa98xx.cnt
+
+# Authsecret - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/bin/hw/android.hardware.authsecret@1.0-service-qti|f247c5a9c8257409428884e725f6634392889b0b
+vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc|317b2faf7497945022f3cbefcd07f489a4686051
+
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
+
+# Bluetooth (A2DP)
+vendor/lib/hw/audio.bluetooth_qti.default.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib/btaudio_offload_if.so
+vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib64/btaudio_offload_if.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+
+# Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
