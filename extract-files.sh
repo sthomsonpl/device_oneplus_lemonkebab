@@ -60,7 +60,8 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed libwfdinput.so "${2}"
             ;;
         vendor/lib64/hw/com.qti.chi.override.so)
-            sed -i "s/com.oem.autotest/\x00om.oem.autotest/" "${2}"
+            "${SIGSCAN}" -p "9B 2B 04 94" -P "1F 20 03 D5" -f "${2}"
+            "${SIGSCAN}" -p "46 23 04 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/210080521F0A0094/210080521F2003D5/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
