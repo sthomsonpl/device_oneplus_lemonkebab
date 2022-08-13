@@ -25,6 +25,9 @@ $(call inherit-product, device/oneplus/lemonkebab/device.mk)
 
 # Inherit some common CHERISH stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+#Inherit Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true

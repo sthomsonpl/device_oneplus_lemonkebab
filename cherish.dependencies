@@ -1,0 +1,15 @@
+[
+{
+  "repository" : "chandu078/vendor_oneplus_addons_camera",
+   "target_path": "vendor/oneplus/addons/camera",
+   "branch"     : "eleven-9R"
+
+},
+
+{
+  "repository" : "Cykeek/android_vendor_lawnchair",
+   "target_path": "vendor/lawnchair",
+   "branch"     : "master"
+
+}
+]
